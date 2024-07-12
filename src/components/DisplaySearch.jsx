@@ -8,7 +8,21 @@ export default function DisplaySearch (){
             image: "https://placehold.co/400",
             name: "Test",
             descriptions: "Test 2",
-            price: "Rp10",
+            price: "Rp10000",
+        },
+        {
+            id: 2,
+            image: "https://placehold.co/400",
+            name: "A",
+            descriptions: "B",
+            price: "Rp10.000",
+        },
+        {
+            id: 1,
+            image: "https://placehold.co/400",
+            name: "Test",
+            descriptions: "Test 2",
+            price: "Rp10000",
         },
         {
             id: 2,
