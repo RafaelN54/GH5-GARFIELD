@@ -3,19 +3,22 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Header() {
   return (
-    <nav className="bg-orange-400 p-4 flex justify-between items-center">
+    <nav className="bg-gradient-to-b from-orange-400 via-orange-350 to-orange-300 p-4 flex flex-wrap justify-between items-center">
       <div className="text-white text-2xl font-bold">Artisanship</div>
-      <div className="flex space-x-4">
-        <input
-          type="text"
-          placeholder="Khilaf apa hari ini?"
-          className="p-2 rounded"
-        />
-        <button className="bg-white text-orange-600 p-2 rounded">Search</button>
+      <div className="flex flex-1 justify-center items-center mt-2 md:mt-0">
+        <div className="flex space-x-4 max-w-lg w-full">
+          <input
+            type="text"
+            placeholder="Khilaf apa hari ini?"
+            className="p-2 rounded w-full"
+          />
+          <button className="bg-white text-orange-600 p-2 rounded">Search</button>
+        </div>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 mt-2 md:mt-0">
+        <button className="fa fa-shopping-cart" style={{ fontSize: '36px', color: 'white' }}></button>
+        <button className="bg-white text-orange-600 p-2 rounded">Login</button>
       </div>
-      <i className="fa fa-shopping-cart" style={{ fontSize: '36px', color: 'white' }}></i>
     </nav>
   );
 }

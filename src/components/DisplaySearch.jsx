@@ -22,7 +22,7 @@ export default function DisplaySearch (){
             image: "https://placehold.co/400",
             name: "Test",
             descriptions: "Test 2",
-            price: "Rp10000",
+            price: "Rp10.000000",
         },
         {
             id: 2,
@@ -35,10 +35,7 @@ export default function DisplaySearch (){
 
     return (
         <div className="w-full flex flex-col">
-            <h1>
-                Search Result ...
-            </h1>
-            <div className="w-full flex flex-row flex-wrap">
+            <div className="w-full flex flex-row flex-nowrap justify-center">
                 {Items.map((item, index) => (
                     <ItemsCard 
                         key={index}
