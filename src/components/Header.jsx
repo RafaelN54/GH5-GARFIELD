@@ -13,15 +13,17 @@ function Header({ isAuthenticated, onSignOut }) {
   return (
     <nav className="bg-gradient-to-b from-orange-400 to-orange-300 p-4 flex flex-wrap justify-between items-center">
       <div className="text-white text-2xl font-bold">
+      <Link to="/">
         <div className="flex flex-row">
-        <Link to="/">
-        <img className="w-[50px]" src="/asset/logo.png"></img>
-          Artisanship
-        </Link>
+        <div className='mx-2'>
+          <img className="w-[50px]" src="/asset/logo.png"></img>
         </div>
+        <div className='flex items-center ms-2'> Artisanship </div>
+        </div>
+        </Link>
       </div>
       <div className="flex flex-1 justify-center items-center mt-2 md:mt-0">
-        <div className="flex space-x-4 max-w-lg w-full">
+        <div className="flex space-x-2 w-[600px]">
           <input
             type="text"
             placeholder="Khilaf apa hari ini?"
@@ -32,6 +34,9 @@ function Header({ isAuthenticated, onSignOut }) {
       </div>
       <div className="flex space-x-4 mt-2 md:mt-0">
         <Link to="/cart" className="fa fa-shopping-cart flex items-center" style={{ fontSize: '30px', color: 'white' }}></Link>
+        <Link to="/favorite" className="bg-white text-orange-600 p-2 rounded flex items-center">
+            Favorites
+          </Link>
         {isAuthenticated ? (
           <button
             onClick={handleLogOut}

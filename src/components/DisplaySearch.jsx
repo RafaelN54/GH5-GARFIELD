@@ -45,9 +45,10 @@ export default function DisplaySearch ({ wishlist, addToWishlist, removeFromWish
             <h2 className="mx-[3%] text-2xl">Popular Products</h2>
             <div className="w-full flex flex-col">
                 <div className="w-full flex flex-row flex-wrap justify-center">
-                    {Items.map((item, index) => (
+                    {Items.map((item) => (
                         <ItemsCard 
-                            key={index}
+                            key={item.id}
+                            id={item.id}
                             image={item.image}
                             name={item.name}
                             descriptions={item.descriptions}

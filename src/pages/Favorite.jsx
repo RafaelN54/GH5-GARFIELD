@@ -10,6 +10,7 @@ const Favorite = ({ wishlist, addToWishlist, removeFromWishlist}) => {
                     {wishlist.map((item) => (
                         <ItemsCard
                             key={item.id}
+                            id={item.id}
                             image={item.image}
                             name={item.name}
                             descriptions={item.descriptions}
