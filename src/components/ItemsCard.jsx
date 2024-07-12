@@ -9,7 +9,7 @@ const ItemsCard = (props) => {
             <div className="w-[90%] flex justify-center items-center">
                 {image && <img src={image} className="justify-center items-center rounded-2xl" />}
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col px-3">
                 <h2>{name}</h2>
                 <p>{price}</p>
                 <p>{descriptions}</p>

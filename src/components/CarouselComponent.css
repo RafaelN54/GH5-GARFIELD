@@ -1,0 +1,10 @@
+.custom-carousel {
+    max-width: 10000px; 
+    margin-top: 0%;
+  }
+  
+  .custom-carousel-img {
+    height: 300px; 
+    object-fit: cover;
+  }
+  
