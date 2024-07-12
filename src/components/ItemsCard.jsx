@@ -1,4 +1,5 @@
 import React from "react";
+import './DisplaySearch.css';
 
 const ItemsCard = ({ id, image, name, descriptions, price, wishlist, addToWishlist, removeFromWishlist }) => {
     const isWishlist = wishlist.some((item) => item.id === id);
@@ -13,11 +14,11 @@ const ItemsCard = ({ id, image, name, descriptions, price, wishlist, addToWishli
     };
 
     return (
-        <div className="flex flex-col m-3 p-2 bg-[#EA9253] w-60 h-80
+        <div className="flex flex-col mx-3 mb-16 p-2 bg-[#EA9253] w-60 h-80
                         justify-start items-center rounded-xl shadow-xl
                         transition duration-200">
             <div className="relative w-[95%] items-center flex-shrink-0 mt-[8px]">
-                {image && <img src={image} alt={name} className="justify-center items-center rounded-xl" />}
+                {image && <img src={image} alt={name} className="item-image justify-center items-center rounded-xl" />}
                 <div className="absolute -mt-3 -mr-3 top-0 right-0 w-10 h-10 bg-[#EA9253] rounded-full p-2" onClick={handleWishlist}>
                     <button aria-label={isWishlist ? "Remove from Wishlist" : "Add to Wishlist"}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill={isWishlist ? "red" : "none"} viewBox="0 0 24 24" strokeWidth="1.5" stroke={isWishlist ? "red" : "white"}
@@ -27,10 +28,12 @@ const ItemsCard = ({ id, image, name, descriptions, price, wishlist, addToWishli
                     </button>
                 </div>
             </div>
-            <div className="flex flex-col py-2 flex-wrap">
+            <div className="flex justify-end mt">
+            <div className="flex flex-col py-1 flex-wrap">
                 <h2 className="text-lg font-semibold">{name}</h2>
                 <p className="text-xl font-bold">{price}</p>
-                <p className="text-base">{descriptions}</p>
+                <p className="text-sm">{descriptions}</p>
+            </div>
             </div>
         </div>
     );

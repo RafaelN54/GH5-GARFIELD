@@ -1,0 +1,6 @@
+.item-image {
+    width: 300px;
+    max-width: 212px;
+    height: 210px;
+    object-fit: cover;
+}

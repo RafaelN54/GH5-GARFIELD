@@ -13,8 +13,8 @@ function CarouselComponent() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Personalization</h3>
+          <p>From our hands to your home – bring the beauty of artisanal crafts into your life.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -24,8 +24,8 @@ function CarouselComponent() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Second slide</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Authenticity</h3>
+          <p>Discover the charm of handmade art – each piece tells a unique story.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -35,8 +35,8 @@ function CarouselComponent() {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Third slide</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Artisanal Beauty</h3>
+          <p>Handcrafted with love and skill, perfect for adding a personal touch to your space.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

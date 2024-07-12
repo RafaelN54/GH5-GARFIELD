@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Kotakcart from "../components/KotakCart";
 import qrcode from "../assets/qrcode.png";
 
@@ -64,11 +64,8 @@ function Cart({ isAuthenticated }) {
             </div>
           ))}
         </div>
-        <div>
-          <div className="flex justify-start">
-            <div>Total Harga: Rp{totalPrice}</div>
-          </div>
-          <div>
+        <div className="w-full flex justify-between items-center mt-4">
+          <div>Total Harga: Rp{totalPrice}</div>
           <div>
             <button onClick={addItem}>Add item</button>
             <button
@@ -76,16 +73,15 @@ function Cart({ isAuthenticated }) {
               className={`btn-checkout ${isAuthenticated ? "" : "disabled"}`}
               disabled={!isAuthenticated}
             >
-              checkout
+              Checkout
             </button>
           </div>
-          {showImage && (
-            <div style={{ textAlign: "center", marginTop: "20px" }}>
-              <img src={qrcode} alt="Checkout" height={200} />
-            </div>
-          )}
+        </div>
+        {showImage && (
+          <div style={{ textAlign: "center", marginTop: "20px" }}>
+            <img src={qrcode} alt="Checkout" height={200} />
           </div>
-          </div>
+        )}
       </div>
     </div>
   );
