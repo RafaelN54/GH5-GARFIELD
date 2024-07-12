@@ -46,7 +46,7 @@ function Kotakcart({onPriceChange, id, onDelete}){
             </div>
             <div className="mx-2">
             <p className="text-[12px] my-2">Total Price</p>
-            <strong>{totalPrice}</strong>
+            <strong>Rp{totalPrice}</strong>
             </div>
         </div>
     </div>

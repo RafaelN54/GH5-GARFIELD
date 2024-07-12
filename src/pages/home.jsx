@@ -6,7 +6,7 @@ import FloatingButton from '../components/FloatingButton';
 
 function Home({ wishlist, addToWishlist, removeFromWishlist }) {
   return (
-    <div className="App">
+    <div className="App mt-32">
       <Carousel />
       <DisplaySearch wishlist={wishlist} addToWishlist={addToWishlist} removeFromWishlist={removeFromWishlist} />
       <Footer />

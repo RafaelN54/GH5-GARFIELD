@@ -51,7 +51,7 @@ function Cart({ isAuthenticated }) {
   };
 
   return (
-    <div className="bg-[#F5F5F5]">
+    <div className="mt-32">
       <div className="flex flex-col h-full items-center">
         <div className="w-full mx-8">
           {items.map((item) => (
@@ -64,12 +64,12 @@ function Cart({ isAuthenticated }) {
             </div>
           ))}
         </div>
-        <div className="flex justify-evenly">
-          <div className="">
-            <div>Total Harga: {totalPrice}</div>
+        <div className="flex flex-row">
+          <div className="flex justify-start">
+            <div>Total Harga: Rp{totalPrice}</div>
           </div>
           <div>
-            <button onClick={addItem}>add item</button>
+            <button onClick={addItem}>Add item</button>
             <button
               onClick={handleCheckout}
               className={`btn-checkout ${isAuthenticated ? "" : "disabled"}`}
