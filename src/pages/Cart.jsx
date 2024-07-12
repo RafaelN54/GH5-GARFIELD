@@ -64,10 +64,11 @@ function Cart({ isAuthenticated }) {
             </div>
           ))}
         </div>
-        <div className="flex flex-row">
+        <div>
           <div className="flex justify-start">
             <div>Total Harga: Rp{totalPrice}</div>
           </div>
+          <div>
           <div>
             <button onClick={addItem}>Add item</button>
             <button
@@ -83,7 +84,8 @@ function Cart({ isAuthenticated }) {
               <img src={qrcode} alt="Checkout" height={200} />
             </div>
           )}
-        </div>
+          </div>
+          </div>
       </div>
     </div>
   );
