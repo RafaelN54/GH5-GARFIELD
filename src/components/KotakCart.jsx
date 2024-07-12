@@ -26,17 +26,28 @@ function Kotakcart({onPriceChange, id, onDelete}){
 
     return(
     <div className="Pembungkus border-2 border-[#A2A2A2] bg-white rounded-xl">
-        <div className="ProductInfo">
-            <a>image</a>
+        <div className="flex flex-col">
+        <div className="ProductInfo flex flex-row">
+            <img className="w-[150px] h-[150px]" src="https://img.freepik.com/free-photo/cute-plush-toy-made-from-crochet_23-2151145662.jpg?t=st=1720782177~exp=1720785777~hmac=47f157d867332b1cd6e3ef2dc29491e0c7ee3ade55f63071999fe9fe543c2dab&w=360"></img>
             <br/>
-            <a>nama barang {harga}</a>
+            <div className="flex flex-col mx-3">
+            <div>nama barang</div>
+            <br/>
+            <div>Rp{harga}</div>
+            </div>
         </div>
-        <div className="ProductPricing">
-            <strong>{totalPrice}</strong>
-            <br/>
-            <button onClick={decreaseCounter}>-</button>
+        </div>
+        <div className="ProductPricing flex flex-row">
+            <div className="mx-2">
+            <p className="text-[12px] text-center my-2"> Quantity </p>
+            <button className="font-bold text-[#EA9253] w-[20px] h-[20px] mx-2 text-center" onClick={decreaseCounter}>-</button>
             <a>{counterItem}</a>
-            <button onClick={increaseCounter}>+</button>
+            <button className="font-bold text-[#EA9253] w-[20px] h-[20px] mx-2 text-center" onClick={increaseCounter}>+</button>
+            </div>
+            <div className="mx-2">
+            <p className="text-[12px] my-2">Total Price</p>
+            <strong>{totalPrice}</strong>
+            </div>
         </div>
     </div>
     )

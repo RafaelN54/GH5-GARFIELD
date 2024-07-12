@@ -7,6 +7,8 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import Home from "./pages/home";
 import Signin from "./pages/signin";
 import Cart from "./pages/Cart";
+import Fab from "@mui/material/Fab"; 
+import { Facebook } from "@mui/icons-material"; 
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/signin" element={<Signin/>}/>
       </Routes>
     </Router>
+    
   );
 }
 

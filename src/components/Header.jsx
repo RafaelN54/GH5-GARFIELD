@@ -21,7 +21,7 @@ function Header() {
         </div>
       </div>
       <div className="flex space-x-4 mt-2 md:mt-0">
-        <Link  to="/cart" className="fa fa-shopping-cart" style={{ fontSize: '36px', color: 'white' }}></Link>
+        <Link  to="/cart" className="fa fa-shopping-cart flex items-center" style={{ fontSize: '30px', color: 'white' }}></Link>
         <Link to="/signin" className="bg-white text-orange-600 p-2 rounded flex items-center">
           Sign in
         </Link>

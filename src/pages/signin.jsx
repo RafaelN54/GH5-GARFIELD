@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const SignIn = ({ onSignIn, prevLocation }) => {
   const navigate = useNavigate();
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    const isValid = name && password.length >= 8 && !passwordError;
+    setIsFormValid(isValid);
+  }, [name, password, passwordError]);
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const name = formData.get('name');
-    const password = formData.get('password');
-
-    if (name && password.length >= 8) {
+    if (isFormValid) {
       onSignIn(name);
       navigate(prevLocation || '/');
     } else if (password.length < 8) {
@@ -50,6 +54,8 @@ const SignIn = ({ onSignIn, prevLocation }) => {
                 className='bg-gray border border-gray-300 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5'
                 required
                 placeholder='Enter username'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div>
@@ -65,7 +71,15 @@ const SignIn = ({ onSignIn, prevLocation }) => {
                 }`}
                 required
                 minLength={8}
-                onChange={() => setPasswordError('')}
+                value={password}
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                  if (e.target.value.length >= 8){
+                    setPasswordError('');
+                  } else {
+                    setPasswordError('Password must be at least 8 characters long.');
+                  }
+                }}
                 placeholder='Enter password'
               />
               {passwordError && (
@@ -75,6 +89,8 @@ const SignIn = ({ onSignIn, prevLocation }) => {
             <button
               type='submit'
               className='w-full text-white bg-[#EA9253] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center'
+              disabled={!isFormValid}
+              onClick={handleGoBack}
             >
               Sign In
             </button>
