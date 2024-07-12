@@ -1,16 +1,11 @@
 .footer {
-    background-color: #0a4275;
+    background-color: #783c00;
     color: white;
     text-align: center;
-    padding: 20px 0;
     position: relative;
     bottom: 0;
-
   }
   
-  .footer-container {
-    padding: 20px;
-  }
   
   .footer-signup {
     display: flex;
@@ -38,6 +33,7 @@
     padding: 10px 0;
     position: relative;
     width: 100%;
+    margin-bottom: 0;
   }
   
   .footer-link {

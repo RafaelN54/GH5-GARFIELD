@@ -42,8 +42,9 @@ function Cart(){
     };
 
     return(
-        <div className="flex flex-row bg-[#F5F5F5] h-full"> 
-            <div className="w-[700px]">
+        <div className="bg-[#F5F5F5]">
+        <div className="flex flex-col h-full items-center"> 
+            <div className="w-full mx-8">
                 {items.map(item => (
                     <div key={item.id}>
                         <Kotakcart id={item.id} onPriceChange={handlePriceChange} onDelete={handleDelete}/>
@@ -61,6 +62,7 @@ function Cart(){
                     <img src={qrcode} alt="Checkout" height={200}/>
                 </div>
             )}
+        </div>
         </div>
     );
 }

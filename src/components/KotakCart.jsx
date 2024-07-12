@@ -25,10 +25,10 @@ function Kotakcart({onPriceChange, id, onDelete}){
     };
 
     return(
-    <div className="Pembungkus border-2 border-[#A2A2A2] bg-white rounded-xl">
-        <div className="flex flex-col">
+    <div className="Pembungkus border-2 border-[#EA9253] bg-white rounded-md">
+        <div className="flex flex-col mx-8">
         <div className="ProductInfo flex flex-row">
-            <img className="w-[150px] h-[150px]" src="https://img.freepik.com/free-photo/cute-plush-toy-made-from-crochet_23-2151145662.jpg?t=st=1720782177~exp=1720785777~hmac=47f157d867332b1cd6e3ef2dc29491e0c7ee3ade55f63071999fe9fe543c2dab&w=360"></img>
+            <img className="w-[150px] h-[150px] rounded-sm" src="https://img.freepik.com/free-photo/cute-plush-toy-made-from-crochet_23-2151145662.jpg?t=st=1720782177~exp=1720785777~hmac=47f157d867332b1cd6e3ef2dc29491e0c7ee3ade55f63071999fe9fe543c2dab&w=360"></img>
             <br/>
             <div className="flex flex-col mx-3">
             <div>nama barang</div>
