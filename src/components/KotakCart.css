@@ -1,0 +1,17 @@
+.Pembungkus {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.ProductInfo {
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.ProductPricing {
+    padding: 10px;
+    margin: 10px;
+}

@@ -8,7 +8,7 @@ export default function DisplaySearch (){
             image: "https://placehold.co/400",
             name: "Test",
             descriptions: "Test 2",
-            price: "Rp10000",
+            price: "Rp10.000",
         },
         {
             id: 2,
@@ -22,7 +22,7 @@ export default function DisplaySearch (){
             image: "https://placehold.co/400",
             name: "Test",
             descriptions: "Test 2",
-            price: "Rp10.000000",
+            price: "Rp10.000",
         },
         {
             id: 2,
