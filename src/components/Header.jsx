@@ -11,7 +11,7 @@ function Header({ isAuthenticated, onSignOut }) {
   };
 
   return (
-    <nav className="bg-gradient-to-b from-orange-400 to-orange-300 p-4 flex flex-wrap justify-between items-center">
+    <nav className="bg-gradient-to-b from-orange-400 to-orange-300 p-4 flex flex-wrap justify-between items-center fixed top-0 left-0 right-0 z-50">
       <div className="text-white text-2xl font-bold">
       <Link to="/">
         <div className="flex flex-row">

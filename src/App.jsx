@@ -56,7 +56,7 @@ function App() {
   };
 
   const removeFromWishlist = (item) => {
-    setWishlist((prevWishlist) => prevWishlist.filter((wishlistItem) => wishlistItem.id !== itemId));
+    setWishlist((prevWishlist) => prevWishlist.filter((wishlistItem) => wishlistItem.id !== item.Id));
   };
 
   return (
