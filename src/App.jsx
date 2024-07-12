@@ -3,20 +3,29 @@ import Header from './components/Header';
 import DisplaySearch from './components/DisplaySearch';
 import Carousel from './components/Carousel';
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from "./pages/home";
+import Signin from "./pages/signin";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
     <Router>
-      <Header/>
+      <ConditionalHeader />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cart"/>
-        <Route path="/signin"/>
+        <Route path="/cart" element={<Cart />}/>
+        <Route path="/signin" element={<Signin/>}/>
       </Routes>
     </Router>
   );
+}
+
+function ConditionalHeader() {
+  const location = useLocation();
+  const showHeader = location.pathname !== "/signin";
+  
+  return showHeader ? <Header /> : null;
 }
 
 export default App;

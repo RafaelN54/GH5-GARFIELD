@@ -24,16 +24,16 @@ const SignIn = ({ onSignIn, prevLocation }) => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-[#EA9253]'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-orange-400 via-orange-350 to-orange-300'>
       <div className='flex justify-center items-center flex-col mx-4 mt-12'>
-        <div className='bg-[#F5F5F5] max-w-[500px] w-full p-4 rounded-lg shadow-lg flex flex-col items-center justify-center mt-16'>
+        <div className='bg-[#F5F5F5] w-[500px] h-[400px] p-4 rounded-lg shadow-lg flex flex-col items-center justify-center mt-16 '>
           <div className='flex items-center justify-between w-full mb-5'>
             <h3 className='text-xl font-medium text-black'>
               Sign In
             </h3>
             <button
               onClick={handleGoBack}
-              className='text-xl font-bold text-burgundy px-4 py-2 text-center'
+              className='text-xl font-bold text-black px-4 py-2 text-center'
             >
               &times;
             </button>
@@ -47,7 +47,7 @@ const SignIn = ({ onSignIn, prevLocation }) => {
                 type='text'
                 name='name'
                 id='name'
-                className='bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5'
+                className='bg-gray border border-gray-300 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5'
                 required
                 placeholder='Enter username'
               />
@@ -60,7 +60,7 @@ const SignIn = ({ onSignIn, prevLocation }) => {
                 type='password'
                 name='password'
                 id='password'
-                className={`bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 ${
+                className={`bg-gray-50 border border-gray text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 ${
                   passwordError ? 'border-red-500' : ''
                 }`}
                 required
@@ -74,7 +74,7 @@ const SignIn = ({ onSignIn, prevLocation }) => {
             </div>
             <button
               type='submit'
-              className='w-full text-white bg-burgundy focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center'
+              className='w-full text-white bg-[#EA9253] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center'
             >
               Sign In
             </button>

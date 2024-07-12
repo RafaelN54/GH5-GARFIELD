@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Kotakcart from ".../components/KotakCart";
-import qrcode from ".../assets/qrcode.png";
+import Kotakcart from "../components/KotakCart";
+import qrcode from "../assets/qrcode.png";
 
 function Cart(){
     const [items, setItems] = useState([{ id: 0, price: 1000}]);

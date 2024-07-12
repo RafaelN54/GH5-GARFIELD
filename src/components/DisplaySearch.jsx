@@ -5,28 +5,28 @@ export default function DisplaySearch (){
     const Items = [
         {
             id: 1,
-            image: "https://placehold.co/400",
+            image: "https://placehold.co/600x400",
             name: "Test",
             descriptions: "Test 2",
             price: "Rp10.000",
         },
         {
             id: 2,
-            image: "https://placehold.co/400",
+            image: "https://placehold.co/600x400",
             name: "A",
             descriptions: "B",
             price: "Rp10.000",
         },
         {
             id: 1,
-            image: "https://placehold.co/400",
+            image: "https://placehold.co/600x400",
             name: "Test",
             descriptions: "Test 2",
             price: "Rp10.000",
         },
         {
             id: 2,
-            image: "https://placehold.co/400",
+            image: "https://placehold.co/600x400",
             name: "A",
             descriptions: "B",
             price: "Rp10.000",
@@ -35,7 +35,7 @@ export default function DisplaySearch (){
 
     return (
         <div className="w-full flex flex-col">
-            <div className="w-full flex flex-row flex-nowrap justify-center">
+            <div className="w-full flex flex-row flex-wrap justify-center">
                 {Items.map((item, index) => (
                     <ItemsCard 
                         key={index}
