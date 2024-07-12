@@ -24,7 +24,7 @@ function App() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://via.placeholder.com/800x400"
+            src="../public/asset/pic-2.jpg"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -35,7 +35,7 @@ function App() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://via.placeholder.com/800x400"
+            src="../public/asset/pic-3.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -44,6 +44,7 @@ function App() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <DisplaySearch />
     </div>
   );
 }

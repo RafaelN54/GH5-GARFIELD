@@ -7,10 +7,16 @@ export default function DisplaySearch (){
             id: 1,
             image: "https://placehold.co/400",
             name: "Test",
-            descriptions: "",
-            price: "",
+            descriptions: "Test 2",
+            price: "Rp10",
         },
-    
+        {
+            id: 2,
+            image: "https://placehold.co/400",
+            name: "A",
+            descriptions: "B",
+            price: "Rp10.000",
+        },
     ]
 
     return (
