@@ -1,7 +1,8 @@
 import React from 'react';
-import DisplaySearch from "../components/DisplaySearch"
+import DisplaySearch from "../components/DisplaySearch";
 import Carousel from '../components/Carousel';
 import Footer from '../components/Footer';
+import FloatingButton from '../components/FloatingButton';
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Carousel />
       <DisplaySearch />
       <Footer />
+      <FloatingButton />
     </div>
   );
 }

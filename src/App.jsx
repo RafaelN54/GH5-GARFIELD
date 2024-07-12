@@ -7,11 +7,37 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import Home from "./pages/home";
 import Signin from "./pages/signin";
 import Cart from "./pages/Cart";
+import Favorite from './pages/Favorite';
 import Fab from "@mui/material/Fab"; 
 import { Facebook } from "@mui/icons-material"; 
+import styled, { ThemeProvider } from 'styled-components';
+import {
+  normal,
+  achromatomaly,
+  achromatopsia,
+  deuteranomaly,
+  deuteranopia,
+  protanomaly,
+  protanopia,
+  tritanomaly,
+  tritanopia,
+} from './themes';
 
+const themes = {
+  normal: normal,
+  achromatomaly: achromatomaly,
+  achromatopsia: achromatopsia,
+  deuteranomaly: deuteranomaly,
+  deuteranopia: deuteranopia,
+  protanomaly: protanomaly,
+  protanopia: protanopia,
+  tritanomaly: tritanomaly,
+  tritanopia: tritanopia,
+};
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [wishlist, setWishlist] = useState([]);
+  const [theme, setTheme] = useState('normal');
 
   const handleSignIn = () => {
     setIsAuthenticated(true);
@@ -19,15 +45,28 @@ function App() {
 
   const handleSignOut = () => {
     setIsAuthenticated(false);
-  }
+  };
+
+  const handleTheme = () => {
+    setTheme(event.target.value);
+  };
+
+  const addToWishlist = (item) => {
+    setWishlist((prevWishlist) => [...prevWishlist, item]);
+  };
+
+  const removeFromWishlist = (item) => {
+    setWishlist((prevWishlist) => prevWishlist.filter((wishlistItem) => wishlistItem.id !== itemId));
+  };
 
   return (
     <Router>
       <ConditionalHeader isAuthenticated={isAuthenticated} onSignOut={handleSignOut}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />}/>
-        <Route path="/signin" element={<Signin onSignIn={handleSignIn} />}/>
+        <Route path="/cart" element={<Cart isAuthenticated={isAuthenticated} />} />
+        <Route path="/signin" element={<Signin onSignIn={handleSignIn} />} />
+        <Route path="/favorite" element={<Favorite wishlist={wishlist} addToWishlist={addToWishlist} removeFromWishlist={removeFromWishlist}/>} />
       </Routes>
     </Router>
     

@@ -11,9 +11,10 @@ function Header({ isAuthenticated, onSignOut }) {
   };
 
   return (
-    <nav className="bg-gradient-to-b from-orange-400 via-orange-350 to-orange-300 p-4 flex flex-wrap justify-between items-center">
-      <div className="text-white text-2xl font-bold">
+    <nav className="bg-gradient-to-b from-orange-400 to-orange-300 p-4 flex flex-wrap justify-between items-center">
+      <div className="text-white text-2xl font-bold flex flex-row">
         <Link to="/">
+        <img src="../"></img>
           Artisanship
         </Link>
       </div>

@@ -1,8 +1,3 @@
-# React + Vite
+# Artisanship
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to Artisanship! Your gateway to discovering the unique and exquisite creations of talented but often overlooked handicrafters across the archipelago. Our platform is dedicated to shining a spotlight on these skilled artisans, showcasing their remarkable craftsmanship and authentic stories. Here, you can explore a diverse range of handcrafted products, each reflecting the rich cultural heritage and artistic traditions of Indonesia. Join us in celebrating and supporting local talent, and bring home a piece of Indonesia's hidden artistry.
