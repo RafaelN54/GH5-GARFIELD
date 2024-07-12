@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Header() {
   return (
@@ -14,6 +15,7 @@ function Header() {
       </div>
       <div className="flex space-x-4">
       </div>
+      <i className="fa fa-shopping-cart" style={{ fontSize: '36px', color: 'white' }}></i>
     </nav>
   );
 }
