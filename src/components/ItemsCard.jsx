@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Tooltip } from "@material-tailwind/react";
 
-const ItemsCard = (props) => {
-    const { image, name, descriptions, price, wishlist, addToWishlist, removeFromWishlist } = props;
-    const [isWishlist, setIsWishlist] = useState(false);
+const ItemsCard = ({ image, name, descriptions, price, wishlist, addToWishlist, removeFromWishlist }) => {
+    const [isWishlist, setIsWishlist] = wishlist.some((item) => item.id === id);
 
     const handleWishlist = () => {
-        setIsWishlist(!isWishlist);
+        const item = { id, image, name, descipstions, price };
+        if(isWishlist){
+            removeFromWishlist(item);
+        } else {
+            addToWishlist(item);
+        }
     };
 
     return (
