@@ -1,6 +1,8 @@
 .custom-carousel {
     max-width: 10000px; 
-    margin-top: 0%;
+    margin: 4%;
+    border-radius: 15px;
+    overflow: hidden; 
   }
   
   .custom-carousel-img {

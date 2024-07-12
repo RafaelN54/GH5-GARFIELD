@@ -42,8 +42,8 @@ function Cart(){
     };
 
     return(
-        <div className="flex flex-row justify-center bg-"> 
-            <div className="w-[800px] h-[400px]">
+        <div className="flex flex-row justify-center bg-[#F5F5F5]"> 
+            <div className="w-[800px]">
                 {items.map(item => (
                     <div key={item.id}>
                         <Kotakcart id={item.id} onPriceChange={handlePriceChange} onDelete={handleDelete}/>

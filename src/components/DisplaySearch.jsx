@@ -5,28 +5,28 @@ export default function DisplaySearch (){
     const Items = [
         {
             id: 1,
-            image: "https://placehold.co/600x400",
+            image: "https://placehold.co/600x500",
             name: "Test",
             descriptions: "Test 2",
             price: "Rp10.000",
         },
         {
             id: 2,
-            image: "https://placehold.co/600x400",
+            image: "https://placehold.co/600x500",
             name: "A",
             descriptions: "B",
             price: "Rp10.000",
         },
         {
             id: 1,
-            image: "https://placehold.co/600x400",
+            image: "https://placehold.co/600x500",
             name: "Test",
             descriptions: "Test 2",
             price: "Rp10.000",
         },
         {
             id: 2,
-            image: "https://placehold.co/600x400",
+            image: "https://placehold.co/600x500",
             name: "A",
             descriptions: "B",
             price: "Rp10.000",
