@@ -25,7 +25,7 @@ function Kotakcart({onPriceChange, id, onDelete}){
     };
 
     return(
-    <div className="Pembungkus">
+    <div className="Pembungkus border-2 border-black rounded-xl">
         <div className="ProductInfo">
             <a>image</a>
             <br/>

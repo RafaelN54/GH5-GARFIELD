@@ -42,8 +42,8 @@ function Cart(){
     };
 
     return(
-        <div>
-            <div>
+        <div className="flex flex-row justify-center bg-"> 
+            <div className="w-[800px] h-[400px]">
                 {items.map(item => (
                     <div key={item.id}>
                         <Kotakcart id={item.id} onPriceChange={handlePriceChange} onDelete={handleDelete}/>
@@ -52,6 +52,7 @@ function Cart(){
             </div>
             <div style={{textAlign: 'right', fontWeight: '600'}}>Total Harga: {totalPrice}</div>
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                <input className="border-1 border-black" placeholder="Insert Alamat" />
                 <button onClick={addItem}>add item</button>
                 <button onClick={handleCheckout}>checkout</button>
             </div>
