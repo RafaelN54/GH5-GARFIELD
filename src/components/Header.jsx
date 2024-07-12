@@ -15,7 +15,7 @@ function Header({ isAuthenticated, onSignOut }) {
       <div className="text-white text-2xl font-bold">
         <div className="flex flex-row">
         <Link to="/">
-        <img className="w-[50px]" src="../../public/asset/logo.png"></img>
+        <img className="w-[50px]" src="/asset/logo.png"></img>
           Artisanship
         </Link>
         </div>
