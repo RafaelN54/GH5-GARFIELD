@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Tooltip } from "@material-tailwind/react";
 
 const ItemsCard = (props) => {
-    const { image, name, descriptions, price } = props;
+    const { image, name, descriptions, price, wishlist, addToWishlist, removeFromWishlist } = props;
     const [isWishlist, setIsWishlist] = useState(false);
 
     const handleWishlist = () => {

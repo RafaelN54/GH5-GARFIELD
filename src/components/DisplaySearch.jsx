@@ -1,7 +1,7 @@
 import React from "react";
 import ItemsCard from "./ItemsCard";
 
-export default function DisplaySearch (){
+export default function DisplaySearch ({ wishlist, addToWishlist, removeFromWishlist }){
     const Items = [
         {
             id: 1,
@@ -51,7 +51,10 @@ export default function DisplaySearch (){
                             image={item.image}
                             name={item.name}
                             descriptions={item.descriptions}
-                            price={item.price}    
+                            price={item.price}  
+                            wishlist={wishlist}
+                            addToWishlist={addToWishlist}
+                            removeFromWishlist={removeFromWishlist}  
                         />
                     ))}
                 </div>

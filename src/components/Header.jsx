@@ -12,11 +12,13 @@ function Header({ isAuthenticated, onSignOut }) {
 
   return (
     <nav className="bg-gradient-to-b from-orange-400 to-orange-300 p-4 flex flex-wrap justify-between items-center">
-      <div className="text-white text-2xl font-bold flex flex-row">
+      <div className="text-white text-2xl font-bold">
+        <div className="flex flex-row">
         <Link to="/">
-        <img src="../"></img>
-          Artisanship
+        <img className="w-[50px]" src="../../public/asset/logo.png"></img>
+        <p>Artisanship</p>
         </Link>
+        </div>
       </div>
       <div className="flex flex-1 justify-center items-center mt-2 md:mt-0">
         <div className="flex space-x-4 max-w-lg w-full">

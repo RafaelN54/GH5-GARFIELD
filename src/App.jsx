@@ -63,7 +63,7 @@ function App() {
     <Router>
       <ConditionalHeader isAuthenticated={isAuthenticated} onSignOut={handleSignOut}/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home wishlist={wishlist} addToWishlist={addToWishlist} removeFromWishlist={removeFromWishlist} />} />
         <Route path="/cart" element={<Cart isAuthenticated={isAuthenticated} />} />
         <Route path="/signin" element={<Signin onSignIn={handleSignIn} />} />
         <Route path="/favorite" element={<Favorite wishlist={wishlist} addToWishlist={addToWishlist} removeFromWishlist={removeFromWishlist}/>} />

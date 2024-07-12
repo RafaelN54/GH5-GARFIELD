@@ -12,7 +12,7 @@ const Favorite = ({ wishlist, addToWishlist, removeFromWishlist}) => {
                             key={item.id}
                             image={item.image}
                             name={item.name}
-                            description={item.description}
+                            descriptions={item.descriptions}
                             price={item.price}
                             wishlist={wishlist}
                             addToWishlist={addToWishlist}
